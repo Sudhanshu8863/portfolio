@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"); /* font-family: 'Fira Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"); /* font-family: 'Source Code Pro', monospace; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before{
+  content: "";
+  background: url(./bg.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+html {
+  font-size: 10px;
+}
+
+.infoContainer {
+  width: 100vw;
+  height: calc(100vh - 35px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.devInfo {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+
+.hello {
+  font-size: 3rem;
+  font-family: "Source Code Pro", monospace;
+  color: white;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+}
+
+.about {
+  font-size: 2.5rem;
+  font-family: "Source Code Pro", monospace;
+  color: white;
+}
+
+.moreAbout {
+  font-size: 2rem;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 3rem;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.btn {
+  color: black;
+  /* background-color: white; */
+}
+
+#btn {
+  margin-left: 3rem;
+}
+
+.btn button {
+  padding: 1rem;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+  border-radius: 1.9rem;
+  background-color: transparent;
+  font-family: "Fira Sans", sans-serif;
+}
+.btn button:hover{
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .devInfo {
+    padding-left: 1rem;
+  }
+}
+

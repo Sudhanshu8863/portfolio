@@ -1,0 +1,50 @@
+body::before{
+  content: "";
+  background: url(./bg.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.contact{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.email {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.email li,
+.phone li {
+  list-style: none;
+  color: white;
+}
+
+.email a,
+.phone a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.phone {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .phone {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .contact{
+    flex-direction: column;
+  }
+}

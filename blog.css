@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"); /* font-family: 'Fira Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"); /* font-family: 'Source Code Pro', monospace; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 10rem;
+  margin: 2rem;
+}
+
+#heading{
+  font-size: 3rem;
+  margin: 4rem;
+  font-family: 'Source Code Pro', monospace;
+  cursor: pointer;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+#container{
+  width: 80vw;
+}
+
+.source{
+  margin-top: 2rem;
+  color: red;
+  font-size: 3rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.content{
+  font-size: 2rem;
+  font-family: 'Fira Sans', sans-serif;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+
+
+/* blog post related stuff */
+
+#form{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  height: 100vh;
+}
+
+#form .logo{
+  width: 100vw;
+}
+
+#close img{
+  width: 5rem;
+  cursor: pointer;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50vw;
+  margin: 2rem;
+}
+
+.label label{
+  font-size: 3rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.label input{
+  font-size: 2rem;
+  font-family: 'Source Code Pro', monospace;
+  width: 100%;
+}
+
+#content{
+  font-family: 'Source Code Pro', monospace;
+  width: 100%;
+}
+
+#btn button{
+  font-family: 'Source Code Pro', monospace;
+  background-color: white;
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 900px) {
+  .label {
+    width: 80vw;
+  }
+}

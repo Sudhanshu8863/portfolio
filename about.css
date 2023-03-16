@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"); /* font-family: 'Fira Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"); /* font-family: 'Source Code Pro', monospace; */
+
+body::before{
+  content: "";
+  background: url(./bg.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.about {
+  font-size: 3rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.aboutMe {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+#skill {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#skillContainer {
+  display: flex;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  color: white;
+}
+#skillContainer li {
+  list-style: none;
+}
+.nPer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.per {
+  margin: 3px;
+  margin-top: 10px;
+}
+
+#html {
+  width: 200px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+}
+
+#css{
+  width: 150px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+}
+
+#js{
+  width: 200px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+}
+#py{
+  width: 200px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+}
+#sql{
+  width: 200px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+}
+#git{
+  width: 100px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .devInfo {
+    padding-left: 0;
+  }
+}
